@@ -1,1 +1,30 @@
 @charset "UTF-8";
+.hukidasi{
+  width: 500px;
+  border-radius:30px;
+  border: solid 5px #8f5a0a;
+  background-color: #fad296;
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.hukidasi:before,.hukidasi::after{
+  content: '';
+  position: absolute;
+  left: 20px;
+  border-right: 15px solid transparent;;
+  border-left: 20px solid transparent;
+}
+
+.hukidasi:before{
+  bottom: -24px;
+  border-top: 20px solid  #8f5a0a;
+}
+
+.hukidasi::after{
+  bottom: -18px;
+  border-top: 20px solid  #fad296;
+}
